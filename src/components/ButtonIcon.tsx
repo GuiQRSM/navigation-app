@@ -8,7 +8,7 @@ type Props = TouchableOpacityProps & {
 export function ButtonRouter({ name, ...rest }: Props) {
   return (
     <TouchableOpacity {...rest}>
-      <MaterialIcons name={name} size={24} />
+      <MaterialIcons name={name} size={32} />
     </TouchableOpacity>
   );
 }

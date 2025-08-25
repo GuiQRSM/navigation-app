@@ -6,7 +6,7 @@ type Title = TextProps & {
 
 export function Title({ children, ...rest }: Title) {
   return (
-    <Text style={{ fontSize: 22, fontWeight: '700' }} {...rest}>
+    <Text style={{ fontSize: 28, fontWeight: '700' }} {...rest}>
       {children}
     </Text>
   );

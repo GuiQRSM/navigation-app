@@ -6,7 +6,7 @@ export function Header({ children }: { children: React.ReactNode }) {
       style={{
         width: '100%',
         flexDirection: 'row',
-        justifyContent: 'space-around',
+        justifyContent: 'space-between',
         alignItems: 'center',
         marginBottom: 24,
       }}
