@@ -2,6 +2,12 @@ import { Home } from '@/app/Home';
 import { Product } from '@/app/Product';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
+//as props são undefined pq product screen não tem um parâmetro obrigatório
+export type StackRouterList = {
+  home: undefined;
+  product: undefined;
+};
+
 const Stack = createNativeStackNavigator();
 
 export function StackRouter() {
