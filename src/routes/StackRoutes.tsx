@@ -8,7 +8,7 @@ export type StackRouterList = {
   product: undefined;
 };
 
-const Stack = createNativeStackNavigator();
+const Stack = createNativeStackNavigator<StackRouterList>();
 
 export function StackRouter() {
   return (
