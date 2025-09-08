@@ -9,7 +9,10 @@ export function Home({ navigation }: StackRoutesProps<'home'>) {
     <View style={{ flex: 1, padding: 32, paddingTop: 54 }}>
       <Header>
         <Title>Home</Title>
-        <ButtonRouter name="add-circle" onPress={() => navigation.navigate('product')} />
+        <ButtonRouter
+          name="add-circle"
+          onPress={() => navigation.navigate('product', { id: '456' })}
+        />
       </Header>
     </View>
   );

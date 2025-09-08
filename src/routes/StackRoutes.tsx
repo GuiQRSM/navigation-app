@@ -6,7 +6,7 @@ import { NativeStackScreenProps } from '@react-navigation/native-stack';
 //as props são undefined pq product screen não tem um parâmetro obrigatório
 export type StackRouterList = {
   home: undefined;
-  product: undefined;
+  product: undefined | { id: string };
 };
 
 export type StackRoutesProps<T extends keyof StackRouterList> = NativeStackScreenProps<
