@@ -12,7 +12,7 @@ export type TabRoutesProps<T extends keyof TabRouterList> = BottomTabScreenProps
 
 const Tab = createBottomTabNavigator<TabRouterList>();
 
-export function TabkRouter() {
+export function TabRouter() {
   return (
     <Tab.Navigator initialRouteName="home" screenOptions={{ headerShown: false }}>
       <Tab.Screen name="home" component={Home} />
