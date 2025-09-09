@@ -15,37 +15,36 @@ export type DrawerRoutesProps<T extends keyof DrawerRouterList> = DrawerScreenPr
 >;
 
 //cria o navegador de abas
-const Tab = createDrawerNavigator<DrawerRouterList>();
+const Drawer = createDrawerNavigator<DrawerRouterList>();
 
 export function DrawerRoutes() {
   return (
-    <Tab.Navigator
+    <Drawer.Navigator
       initialRouteName="home"
       screenOptions={{
         headerShown: false,
-        tabBarActiveTintColor: '#2C46B1',
-        tabBarInactiveTintColor: '#444444',
-        tabBarLabelPosition: 'beside-icon',
+        drawerActiveTintColor: '#2C46B1',
+        drawerInactiveTintColor: '#444444',
       }}
     >
-      <Tab.Screen
+      <Drawer.Screen
         name="home"
         component={Home}
         options={{
-          tabBarLabel: 'inicio',
-          tabBarIcon: ({ color, size }) => <MaterialIcons name="home" color={color} size={size} />,
+          drawerLabel: 'produto',
+          drawerIcon: ({ color, size }) => <MaterialIcons name="home" color={color} size={size} />,
         }}
       />
-      <Tab.Screen
+      <Drawer.Screen
         name="product"
         component={Product}
         options={{
-          tabBarLabel: 'inicio',
-          tabBarIcon: ({ color, size }) => (
+          drawerLabel: 'produto',
+          drawerIcon: ({ color, size }) => (
             <MaterialIcons name="add-circle" color={color} size={size} />
           ),
         }}
       />
-    </Tab.Navigator>
+    </Drawer.Navigator>
   );
 }
