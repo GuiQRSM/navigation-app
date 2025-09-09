@@ -2,6 +2,7 @@ import { ButtonIcon } from '@/components/ButtonIcon';
 import { Header } from '@/components/Header';
 import { Title } from '@/components/Title';
 import { View } from 'react-native';
+// imports of all types of screen navigation
 import { StackRoutesProps } from '@/routes/StackRoutes';
 import { TabRoutesProps } from '@/routes/BottonTabs';
 import { DrawerRoutesProps } from '@/routes/DrawerRoutes';
