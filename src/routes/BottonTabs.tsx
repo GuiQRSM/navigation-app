@@ -10,6 +10,7 @@ export type TabRouterList = {
 
 export type TabRoutesProps<T extends keyof TabRouterList> = BottomTabScreenProps<TabRouterList, T>;
 
+//cria o navegador de abas
 const Tab = createBottomTabNavigator<TabRouterList>();
 
 export function TabRouter() {
